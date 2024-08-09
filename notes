@@ -1,0 +1,26 @@
+
+1. Models (to know exactly how to handle different data types...)
+
+2. Repository (necessary for JPA, to access data in our database)
+
+3. Controller (where we build controllers) - package for implementation and package for interfaces (optional). A controller is a java class that has methods to handle API requests
+-
+
+4. In the service is where we have complex logic for the controllers.
+
+
+===
+1. Once springboot knows which database to work from using application.properties file, we need models...for spring to know how to interact with different properties.
+
+2. Model is telling spring to look for a table with a "Teacher" name, and knows that through Annotation @Entity
+- Looks for that exact name but in lower case (spring boot do this via @entity)
+- our entity is already linked to database table through the entity annotation
+- Spring needs to know what is happening in each table, what data structures are in that table. We do this using models
+
+3. If we want to retrieve information we create repositories. We create repository and add anotation @repository
+- and we use jpa by extending the repository (Jpa handles everything for us)
+
+4. We create controllers to access the database via the API
+
+5.
+
